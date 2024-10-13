@@ -1,0 +1,33 @@
+code to add the info into the tables:
+
+USE pandemic;
+
+-- Insert data into the `goal` table
+INSERT INTO goal (Quest_ID, Rewards, Title, Description, Status) VALUES
+(1, '50 Points', 'Gather the Pathogen Core', 'Find the Pathogen Core to understand its blueprint.', 0),
+(2, '100 Points', 'Obtain the Contagion Catalyst', 'Secure the catalyst to accelerate the virus spread.', 0),
+(3, '75 Points', 'Collect Spore Serum', 'Acquire the serum to enable spore-based forms of the virus.', 0),
+(4, '150 Points', 'Capture the Infection Matrix', 'Retrieve the matrix to bypass host immune defenses.', 0),
+(5, '200 Points', 'Get Mutation Crystals', 'Obtain rare crystals for unpredictable mutations.', 0);
+
+
+-- Insert data into the `inventory` table
+INSERT INTO inventory (Item_ID, Item_name, Item_present, Item_desc) VALUES
+(1, 'Pathogen Core', 0, 'The core element of the virus containing its DNA/RNA blueprint.'),
+(2, 'Contagion Catalyst', 0, 'A volatile substance that accelerates the virus spread in hosts.'),
+(3, 'Spore Serum', 0, 'A mutagenic liquid enabling the virus to develop spore-based forms.'),
+(4, 'Infection Matrix', 0, 'A viral protein aiding in the penetration of immune defenses.'),
+(5, 'Mutation Crystals', 0, 'Unstable crystals causing unpredictable mutations in the virus.');
+
+-- Insert data into the `people` table
+INSERT INTO people (People_id, People_name, People_price, People_skills) VALUES
+(1, 'Dr. Richard Morgan', 500, 'Virology, Bioengineering'),
+(2, 'Dr. Emily Harper', 700, 'Genetics, Pathology'),
+(3, 'Dr. James Hughes', 600, 'Immunology, Molecular Biology'),
+(4, 'Dr. Anna Thompson', 450, 'Biochemistry, Toxicology'),
+(5, 'Dr. Michael Lee', 550, 'Epidemiology, Pharmacology');
+
+-- Insert data into the `player` table
+INSERT INTO player (Player_ID, Player_points, Player_Location) VALUES
+(1, '0', 0.0);
+
