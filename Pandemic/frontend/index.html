@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"/>
+    <link href="../asset/css/index.css" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" defer></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/svg/skull.svg" defer></script>
+    <title>Pandemic</title>
+</head>
+
+<body>
+<div class="container">
+    <header class="page-header">
+        <h1 class="page-title">
+            <ion-icon name="skull"></ion-icon>
+            Pandemic
+            <ion-icon name="skull"></ion-icon>
+        </h1>
+        <nav>
+            <ul class="flex-wrap space-evenly">
+                <li>
+                    <a class="button" href="index.html">Game</a>
+                </li>
+                <li>
+                    <a class="button" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="button" href="intro.html">Tutorial</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="map">
+            <!-- <img class="responsive-image" src="img/finland.svg" alt="map of finland"> -->
+        </div>
+        <div class="boxes">
+
+            <div>
+                <section class="box">
+                    <header>
+                        <h2>Game Status</h2>
+                    </header>
+                    <table>
+                        <tr>
+                            <td>Points: <span id="cPoint"></span></td>
+                            <td>Ingredients collected: <span id="igCollected"></span>/10</td>
+                            <td>Municipalities affected: <span id="mAffected"></span></td>
+                            <td>Virus created: <span id="virus"></span></td>
+                            <td>Agents: <span id="agents"></span></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            <div>
+                <section class="depbox">
+                    <header>
+                        <h2>Deployment costs</h2>
+                    </header>
+                    <table>
+                        <tr>
+                            <td>Virus Points: 20 <span id="virus-points"></span>/10</td>
+                            <td>Total Ingredients: <span id="total-ingredients"></span></td>
+                            <td>Virus Cost: 10 <span id="virus-cost"></span></td>
+                            <td>Agent Cost: 5 <span id="agent-cost"></span></td>
+                        </tr>
+                    </table>
+                </section>
+
+            </div>
+
+
+            <div class="action-box">
+                <h2>Actions</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <button id="deploy-agent">Deploy Agent</button>
+                        </td>
+                        <td>
+                            <button id="gather-ingredients">Gather Ingredients</button>
+                        </td>
+                        <td>
+                            <button id="create-virus">Create Virus</button>
+                        </td>
+                        <td>
+                            <button id="affect-municipalities">Affect Municipalities</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <p>&copy; 2024 Biohazard</p>
+    </footer>
+</div>
+<script src="../asset/js/main.js" defer></script>
+</body>
+
+</html>

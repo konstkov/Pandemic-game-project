@@ -1,0 +1,46 @@
+{
+  "player_points": 10,
+  "ingredients_collected": 0,
+  "affected_municipalities": [""],
+  "virus_created": false,
+  "agents": [
+    {
+      "name": "Agent 007",
+      "health": 80
+    },
+    {
+      "name": "Agent 002",
+      "health": 100
+    }
+  ],
+  "location": [
+    {
+      "name": "Helsinki Airport",
+      "latitude": 60.3182,
+      "longitude": 24.9634,
+      "active": true,
+      "distance": 0
+    },
+    {
+      "name": "Tampere-Pirkkala Airport",
+      "latitude": 61.4144,
+      "longitude": 23.6037,
+      "active": false,
+      "distance": 150
+    },
+    {
+      "name": "Oulu Airport",
+      "latitude": 64.9331,
+      "longitude": 25.3542,
+      "active": true,
+      "distance": 500
+    },
+    {
+      "name": "Rovaniemi Airport",
+      "latitude": 66.5617,
+      "longitude": 25.8324,
+      "active": false,
+      "distance": 800
+    }
+  ]
+}

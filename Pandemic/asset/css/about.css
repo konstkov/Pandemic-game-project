@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    padding: 20px 10px;
+    background: #0f0f0f;
+    border-bottom: 2px solid #ff0033;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: #ff0033;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-shadow: 0px 0px 10px #ff0033, 0px 0px 20px #ff6600;
+}
+
+/* Navigation */
+nav {
+    margin-top: 15px;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-wrap.space-evenly {
+    justify-content: space-evenly;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #ff0033;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background: #ff6600;
+    transform: scale(1.1);
+}
+
+/* Article */
+.article {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 0px 10px rgba(255, 0, 51, 0.5);
+}
+
+.article p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Credentials */
+.credentials {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.credentials h3 {
+    font-size: 1.5rem;
+    color: #ff6600;
+}
+
+.credentials p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* Footer */
+.page-footer {
+    background: #0f0f0f;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #ff0033;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.page-footer p {
+    margin: 0;
+}
+
+/* Icons */
+ion-icon {
+    color: #ff0033;
+    font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
